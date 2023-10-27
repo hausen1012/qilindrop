@@ -241,7 +241,9 @@ class Peer {
                 this.ip = '127.0.0.1';
             }
         }
-        if (/^((192\.168\.)|fe80|(10\.)|(172\.16\.))/.test(this.ip)) this.ip = "local";
+        console.log("raw ip:" + this.ip);
+        if (/^((192\.168\.)|(10\.)|(172\.(1[6-9]|2[0-9]|3[0-1])\.))/.test(this.ip)) this.ip = "local";
+        console.log("final ip:" + this.ip);
     }
 
     _setPeerId(request) {

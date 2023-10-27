@@ -26,12 +26,13 @@ function getName(seed) {
         '色', '的'
     );
     var givenNames = new Array(
-        '钢铁侠', '雷神', '绿巨人', '鹰眼', '黑寡妇', '蜘蛛侠', '蝙蝠侠', '神奇博士', '蚁人', '星爵', '美国队长', '惊奇队长', '佩奇', '威廉', '麒麟'
+        '钢铁侠', '雷神', '绿巨人', '鹰眼', '黑寡妇', '蜘蛛侠', '蝙蝠侠', '神奇博士', '蚁人', '星爵', '美国队长', '惊奇队长', '佩奇', '威廉', '麒麟',
+        '超人', '闪电侠', '水行侠', '火星人', '猫女', '绿箭侠', '神奇女侠', '毒藤女', '奇异博士', '蜥蜴人', '铁甲奇侠', '钢铁狼', '神奇蜘蛛', '独角兽', '灰熊'
     );
     Math.seed = seed.hashCode();
-    var familyName = familyNames[Math.seededRandom(14, 0)];
+    var familyName = familyNames[Math.seededRandom(13, 0)];
     var midName = midNames[Math.seededRandom(2, 0)];
-    var givenName = givenNames[Math.seededRandom(15, 0)];
+    var givenName = givenNames[Math.seededRandom(30, 0)];
     var fullName = familyName + givenName;
     if (fullName && fullName.length < 2) fullName = '幸福的威廉与佩奇';
 
