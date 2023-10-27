@@ -28,3 +28,9 @@ Enter a blank room name to return to LAN mode.
       `node index.js`\
 6、没有报错的话，打开本机ip地址的3000端口，例如：192.168.1.6:3000\
 7、连接同一内网，使用其他设备打开上述网址，如果能相互发现即安装成功。
+
+## Docker运行
+
+```sh
+docker run -d --name qilindrop -p 3000:3000 --restart=always hausen1012/qilindrop
+```
